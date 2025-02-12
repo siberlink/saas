@@ -114,8 +114,8 @@ This project is licensed under the **MIT License** – feel free to use, modify,
 ---
 
 ## **🌎 Community & Support**
-💬 **Join the Discussion:** [GitHub Discussions](https://github.com/your-org/SiberLink/discussions)  
-📢 **Follow Us on Twitter:** [@SiberLinkAI](https://twitter.com/siberlinkai)  
+💬 **Join the Discussion:** [GitHub Discussions](https://github.com/siberlink/saas/discussions)  
+📢 **Join Our Facebook Group:** [Siberlink | AI SaaS Developers](https://facebook.com/share/g/18AyTfBg4P/)  
 📩 **Join Our Discord:** [Discord Invite](https://discord.gg/KpktfvaB)  
 
 ---
