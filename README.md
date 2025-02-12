@@ -1,4 +1,4 @@
-# 🚀 SiberLink – AI-Powered E-commerce & Drop Shipping SaaS
+# 🚀 Siberlink – AI-Powered E-commerce & Drop Shipping SaaS
 
 ## **🌟 Overview**
 Welcome to **SiberLink**, a **next-generation SaaS platform** that revolutionizes the **eCommerce and drop shipping industry** by offering **full automation** powered by AI. SiberLink provides entrepreneurs and businesses with a complete **AI-driven suite** for **product research, market insights, competition tracking, pricing strategies, marketing automation, and seamless integration** with eCommerce platforms like Shopify, WooCommerce, and Amazon.
