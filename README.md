@@ -116,8 +116,7 @@ This project is licensed under the **MIT License** – feel free to use, modify,
 ## **🌎 Community & Support**
 💬 **Join the Discussion:** [GitHub Discussions](https://github.com/your-org/SiberLink/discussions)  
 📢 **Follow Us on Twitter:** [@SiberLinkAI](https://twitter.com/siberlinkai)  
-📩 **Join Our Discord:** [Discord Invite](https://discord.com/your-invite)  
-
+📩 **Join Our Discord:** [Discord Invite](https://discord.gg/KpktfvaB)  
 ---
 
 🚀 **Join SiberLink and be part of the next AI-driven eCommerce revolution!**
