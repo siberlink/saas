@@ -4,8 +4,13 @@ import React from "react";
 function MyStoreProducts() {
     return (
         <div>
-            <h1>My Store Products</h1>
-            <p>Here are Store products for your store.</p>
+            <div className="dashboard-card">
+                <h1 className="page-header">AI-Driven Product Automation</h1>
+                <p>Automatically push products to your store(s).</p>
+            </div>
+            <div className="dashboard-grid">
+
+            </div>
         </div>
     );
 }

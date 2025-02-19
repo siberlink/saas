@@ -1,5 +1,5 @@
 /* AI-Powered Pricing Insights Card Styles */
-.ai-pricing-insights {
+.ppi-pricing-insights {
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -7,24 +7,28 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.ai-pricing-insights:hover {
+.ppi-pricing-insights:hover {
     transform: scale(1.02);
 }
 
-.ai-pricing-insights h2 {
-    font-size: 22px;
+.ppi-pricing-insights h2 {
+    font-size: 18px;
     color: #2c3e50;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.pricing-list {
+.ppi-pricing-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow-y: auto;
+
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.pricing-item {
+.ppi-pricing-item {
     background: #f8f9fa;
     padding: 12px;
     border-radius: 6px;
@@ -33,26 +37,26 @@
     transition: background 0.3s ease;
 }
 
-.pricing-item:hover {
+.ppi-pricing-item:hover {
     background: #e3e6ea;
 }
 
-.pricing-details {
+.ppi-pricing-details {
     font-size: 14px;
     color: #34495e;
 }
 
-.pricing-details p {
+.ppi-pricing-details p {
     margin: 5px 0;
 }
 
-.pricing-details strong {
+.ppi-pricing-details strong {
     font-size: 16px;
     color: #2c3e50;
 }
 
 /* Optimization Score Colors */
-.optimization-score {
+.ppi-optimization-score {
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 4px;
@@ -60,22 +64,22 @@
     margin-top: 5px;
 }
 
-.optimization-score.good {
+.ppi-optimization-score.good {
     background-color: #4CAF50;
     color: white;
 }
 
-.optimization-score.review {
+.ppi-optimization-score.review {
     background-color: #FFC107;
     color: #333;
 }
 
-.optimization-score.adjust {
+.ppi-optimization-score.adjust {
     background-color: #E74C3C;
     color: white;
 }
 
-.card {
+.ppi-card {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -83,7 +87,7 @@
 }
 
 @media (max-width: 768px) {
-    .pricing-item {
+    .ppi-pricing-item {
         padding: 15px;
     }
 }

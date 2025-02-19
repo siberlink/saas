@@ -4,8 +4,13 @@ import React from "react";
 function OrderAnalytics() {
     return (
         <div>
-            <h1>AI Order Analytics</h1>
-            <p>Here are AI Order Analytics for your store.</p>
+            <div className="dashboard-card">
+                <h1 className="page-header">AI-Driven Order Analytics</h1>
+                <p>Manage order analytics to make decisions.</p>
+            </div>
+            <div className="dashboard-grid">
+
+            </div>
         </div>
     );
 }

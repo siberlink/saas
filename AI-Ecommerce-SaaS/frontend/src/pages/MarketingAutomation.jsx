@@ -4,8 +4,13 @@ import React from "react";
 function MarketingAutomation() {
     return (
         <div>
-            <h1>AI-Driven Marketing Automation</h1>
-            <p>Here is the AI-Driven Marketing Automation for your store.</p>
+            <div className="dashboard-card">
+                <h1 className="page-header">AI-Powered Marketing Automation</h1>
+                <p>Manage marketing for your stores.</p>
+            </div>
+            <div className="dashboard-grid">
+
+            </div>
         </div>
     );
 }

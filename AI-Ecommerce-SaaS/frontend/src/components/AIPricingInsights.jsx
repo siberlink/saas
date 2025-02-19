@@ -34,17 +34,17 @@ const pricingData = [
 
 function AIPricingInsights() {
     return (
-        <div className="ai-pricing-insights card">
+        <div className="ppi-pricing-insights card">
             <h2>AI-Powered Pricing Insights</h2>
-            <ul className="pricing-list">
+            <ul className="ppi-pricing-list">
                 {pricingData.map((item) => (
-                    <li key={item.id} className="pricing-item">
-                        <div className="pricing-details">
+                    <li key={item.id} className="ppi-pricing-item">
+                        <div className="ppi-pricing-details">
                             <p><strong>{item.product}</strong></p>
                             <p>Current Price: {item.currentPrice}</p>
                             <p>AI Recommended Price: {item.aiRecommendedPrice}</p>
                             <p>Competitor Price: {item.competitorPrice}</p>
-                            <p className={`optimization-score ${item.scoreClass}`}>{item.optimizationScore}</p>
+                            <p className={`ppi-optimization-score ${item.scoreClass}`}>{item.optimizationScore}</p>
                         </div>
                     </li>
                 ))}

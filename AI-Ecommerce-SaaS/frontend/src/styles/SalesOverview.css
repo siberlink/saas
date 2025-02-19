@@ -1,5 +1,5 @@
 /* Sales Overview Card Styles */
-.sales-overview {
+.so-sales-overview {
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -7,41 +7,41 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.sales-overview:hover {
+.so-sales-overview:hover {
     transform: scale(1.02);
 }
 
-.sales-overview h2 {
-    font-size: 22px;
+.so-sales-overview h2 {
+    font-size: 18px;
     color: #2c3e50;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.stats {
+.so-stats {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    font-size: 16px;
+    gap: 1px;
+    font-size: 14px;
     color: #34495e;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
-.stats p {
-    margin: 5px 0;
+.so-stats p {
+    margin: 3px 0;
 }
 
-.stats strong {
+.so-stats strong {
     color: #2c3e50;
 }
 
 /* Chart Styling */
-.sales-overview canvas {
+.so-sales-overview canvas {
     max-width: 100%;
     height: auto;
 }
 
-.card {
+.so-card {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -49,7 +49,7 @@
 }
 
 @media (max-width: 768px) {
-    .sales-overview {
+    .so-sales-overview {
         padding: 15px;
     }
 }

@@ -4,8 +4,13 @@ import React from "react";
 function Settings() {
     return (
         <div>
-            <h1>Store Settingss</h1>
-            <p>Here are the Settings for your store</p>
+            <div className="dashboard-card">
+                <h1 className="page-header">Account Settings</h1>
+                <p>Manage your global settings.</p>
+            </div>
+            <div className="dashboard-grid">
+
+            </div>
         </div>
     );
 }

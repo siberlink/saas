@@ -5,6 +5,7 @@ import BestSellingProducts from "../components/BestSellingProducts";
 import AIPricingInsights from "../components/AIPricingInsights";
 import "../styles.css";
 import AIPoweredProductRecommendation from "../components/AIPoweredProductRecommendation";
+import CartAbandonmentInsights from "../components/CartAbandonmentInsights";
 
 function DashboardHome() {
     return (
@@ -18,6 +19,7 @@ function DashboardHome() {
                 <div><BestSellingProducts /></div>
                 <div><AIPricingInsights /></div>
                 <div><AIPoweredProductRecommendation /></div>
+                <div><CartAbandonmentInsights /></div>
             </div>
         </div>
     );

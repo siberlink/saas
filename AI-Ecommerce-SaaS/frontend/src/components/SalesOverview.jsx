@@ -20,9 +20,9 @@ function SalesOverview() {
     };
 
     return (
-        <div className="sales-overview card">
+        <div className="so-sales-overview so-card">
             <h2>Sales Overview</h2>
-            <div className="stats">
+            <div className="so-stats">
                 <p><strong>Total Sales:</strong> $50,000</p>
                 <p><strong>Number of Orders:</strong> 1,200</p>
                 <p><strong>Conversion Rate:</strong> 2.5%</p>

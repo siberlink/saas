@@ -21,12 +21,12 @@ function App() {
         <div className="main-content">
           <Routes>
             <Route path="/" element={<DashboardHome />} />
-            <Route path="/ai-recommendations" element={<AIRecommendations />} />
-            <Route path="/my-store-products" element={<MyStoreProducts />} />
+            <Route path="/ai-product-recommendations" element={<AIRecommendations />} />
+            <Route path="/ai-product-automation" element={<MyStoreProducts />} />
             <Route path="/order-analytics" element={<OrderAnalytics />} />
-            <Route path="/marketing-automation" element={<MarketingAutomation />} />
+            <Route path="/ai-marketing-automation" element={<MarketingAutomation />} />
             <Route path="/store-integrations" element={<StoreIntegrations />} />
-            <Route path="/settings" element={<Settings />} />
+            <Route path="/account-settings" element={<Settings />} />
           </Routes>
         </div>
       </div>

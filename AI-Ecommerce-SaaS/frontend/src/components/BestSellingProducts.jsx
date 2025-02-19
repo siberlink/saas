@@ -35,13 +35,13 @@ const bestSellingProducts = [
 
 function BestSellingProducts() {
     return (
-        <div className="best-selling-products card">
-            <h2>Best-Selling Products</h2>
-            <ul className="product-list">
+        <div className="best-selling-products bsp-card">
+            <h2>AI-Researched Best-Selling Products</h2>
+            <ul className="bsp-product-list">
                 {bestSellingProducts.map((product) => (
-                    <li key={product.id} className="product-item">
-                        <img src={product.image} alt={product.name} className="product-image" />
-                        <div className="product-details">
+                    <li key={product.id} className="bsp-product-item">
+                        <img src={product.image} alt={product.name} className="bsp-product-image" />
+                        <div className="bsp-product-details">
                             <p><strong>{product.name}</strong></p>
                             <p>Units Sold: {product.unitsSold}</p>
                             <p>Revenue: {product.revenue}</p>
