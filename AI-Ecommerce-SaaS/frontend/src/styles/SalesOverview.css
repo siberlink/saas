@@ -1,0 +1,55 @@
+/* Sales Overview Card Styles */
+.sales-overview {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sales-overview:hover {
+    transform: scale(1.02);
+}
+
+.sales-overview h2 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.stats p {
+    margin: 5px 0;
+}
+
+.stats strong {
+    color: #2c3e50;
+}
+
+/* Chart Styling */
+.sales-overview canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* ✅ Forces all cards to be the same height */
+}
+
+@media (max-width: 768px) {
+    .sales-overview {
+        padding: 15px;
+    }
+}

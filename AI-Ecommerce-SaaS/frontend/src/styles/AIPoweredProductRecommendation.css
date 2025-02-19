@@ -1,0 +1,98 @@
+/* AI-Powered Product Recommendation Card Styles */
+.ai-product-recommendation {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 400px;
+    /* Enforce the same height as other cards */
+}
+
+.ai-product-recommendation:hover {
+    transform: scale(1.02);
+}
+
+.ai-product-recommendation h2 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.ai-product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    overflow-y: auto;
+    /* Enable scrolling if needed */
+    padding-right: 10px;
+    /* Prevent content from being cut off by scrollbar */
+    flex-grow: 1;
+}
+
+.ai-product-card {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s ease;
+    height: 80px;
+    /* Enforce uniform card height */
+}
+
+.ai-product-card:hover {
+    background: #e3e6ea;
+}
+
+.ai-product-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.ai-product-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+}
+
+.ai-product-details p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #34495e;
+}
+
+.ai-product-details strong {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.cardai {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* ✅ Forces all cards to be the same height */
+}
+
+@media (max-width: 768px) {
+    .ai-product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .ai-product-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

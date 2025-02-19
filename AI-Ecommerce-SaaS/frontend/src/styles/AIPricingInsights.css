@@ -1,0 +1,89 @@
+/* AI-Powered Pricing Insights Card Styles */
+.ai-pricing-insights {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.ai-pricing-insights:hover {
+    transform: scale(1.02);
+}
+
+.ai-pricing-insights h2 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.pricing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-item {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s ease;
+}
+
+.pricing-item:hover {
+    background: #e3e6ea;
+}
+
+.pricing-details {
+    font-size: 14px;
+    color: #34495e;
+}
+
+.pricing-details p {
+    margin: 5px 0;
+}
+
+.pricing-details strong {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* Optimization Score Colors */
+.optimization-score {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.optimization-score.good {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.optimization-score.review {
+    background-color: #FFC107;
+    color: #333;
+}
+
+.optimization-score.adjust {
+    background-color: #E74C3C;
+    color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* ✅ Forces all cards to be the same height */
+}
+
+@media (max-width: 768px) {
+    .pricing-item {
+        padding: 15px;
+    }
+}
