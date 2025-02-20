@@ -1,0 +1,85 @@
+/* Customer Retention & Engagement Card Styles */
+.cr-customer-retention {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cr-customer-retention:hover {
+    transform: scale(1.02);
+}
+
+.cr-customer-retention h2 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cr-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.cr-stats p {
+    margin: 5px 0;
+}
+
+.cr-stats strong {
+    color: #2c3e50;
+}
+
+.cr-retention-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-size: 15px;
+    color: #34495e;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.cr-retention-details p {
+    margin: 3px 0;
+}
+
+/* Chart Styling */
+.cr-chart-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+}
+
+.cr-customer-retention canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+.cr-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 400px;
+    /* ✅ Ensures all cards maintain the same height */
+}
+
+@media (max-width: 768px) {
+    .cr-customer-retention {
+        padding: 15px;
+        width: 100%;
+    }
+}
