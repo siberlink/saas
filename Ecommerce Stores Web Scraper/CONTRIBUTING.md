@@ -7,9 +7,8 @@ Welcome to the **Ecommerce Stores Web Scraper**! This project is designed to scr
 
 ### **1. Fork and Clone the Repository**
 ```sh
-git clone https://github.com/YOUR-USERNAME/Ecommerce-Stores-Web-Scraper.git
+git clone https://github.com/siberlink/saas.git
 cd Ecommerce-Stores-Web-Scraper
-git remote add upstream https://github.com/ORIGINAL-OWNER/Ecommerce-Stores-Web-Scraper.git
 ```
 
 ### **2. Install Dependencies**
@@ -24,7 +23,7 @@ python main.py  # Example entry point
 
 ## 🛠️ Contribution Guidelines
 ### **Branching Strategy**
-- **`main`** → Production branch (protected)
+- **`master`** → Production branch (protected)
 - **`dev`** → Development branch (latest changes)
 - **Feature branches** → `feature/<feature-name>`
 - **Bug fix branches** → `fix/<bug-name>`
