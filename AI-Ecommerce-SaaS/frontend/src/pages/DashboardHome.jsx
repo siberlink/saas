@@ -13,7 +13,7 @@ function DashboardHome() {
         <div>
             <div className="dashboard-card">
                 <h1 className="page-header">Hello James, Welcome to Your Dashboard!</h1>
-                <p>Manage your AI-powered tools and store settings.</p>
+                <p>Overview your store analytics to make decisions</p>
             </div>
             <div className="dashboard-grid">
                 <div><SalesOverview /></div>

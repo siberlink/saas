@@ -6,7 +6,7 @@ function MyStoreProducts() {
         <div>
             <div className="dashboard-card">
                 <h1 className="page-header">AI-Driven Product Automation</h1>
-                <p>Automatically push products to your store(s).</p>
+                <p>Automatically push products to your store.</p>
             </div>
             <div className="dashboard-grid">
 

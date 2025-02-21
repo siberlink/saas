@@ -35,7 +35,7 @@ const pricingData = [
 function AIPricingInsights() {
     return (
         <div className="ppi-pricing-insights card">
-            <h2>AI-Powered Pricing Insights</h2>
+            <h2>Pricing Insights</h2>
             <ul className="ppi-pricing-list">
                 {pricingData.map((item) => (
                     <li key={item.id} className="ppi-pricing-item">

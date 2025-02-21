@@ -36,7 +36,7 @@ const bestSellingProducts = [
 function BestSellingProducts() {
     return (
         <div className="best-selling-products bsp-card">
-            <h2>AI-Researched Best-Selling Products</h2>
+            <h2>Best-Selling Products</h2>
             <ul className="bsp-product-list">
                 {bestSellingProducts.map((product) => (
                     <li key={product.id} className="bsp-product-item">

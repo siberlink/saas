@@ -33,7 +33,7 @@ const chartOptions = {
 function CartAbandonmentInsights() {
     return (
         <div className="cai-cart-abandonment-insights cai-card">
-            <h2>AI-Driven Cart Abandonment Insights</h2>
+            <h2>Cart Abandonment Insights</h2>
             <div className="cai-insights-container">
                 <div className="cai-chart-container">
                     <Doughnut data={chartData} options={chartOptions} />
