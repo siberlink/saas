@@ -9,7 +9,8 @@ Thank you for your interest in contributing to the **AI-Powered E-commerce SaaS*
 2. Clone your fork:
    ```sh
    git clone https://github.com/your-username/AI-Ecommerce-SaaS.git
-   cd AI-Ecommerce-SaaS
+   cd frontend, or
+   cd backend
    ```
 3. Set up the upstream repository to sync changes:
    ```sh
@@ -92,10 +93,10 @@ git push origin feature-name
 
 ---
 
-## **🎯 Getting Help**
-Join our **community discussions**:
-- **GitHub Discussions**: [Link]
-- **Discord Server**: [Link]
+## **🌎 Community & Support**
+💬 **Join the Discussion:** [GitHub Discussions](https://github.com/siberlink/saas/discussions)  
+📢 **Join Our Facebook Group:** [Siberlink | AI SaaS Developers](https://facebook.com/share/g/18AyTfBg4P/)  
+📩 **Join Our Discord:** [Discord Invite](https://discord.gg/KpktfvaB) 
 
 ---
 
