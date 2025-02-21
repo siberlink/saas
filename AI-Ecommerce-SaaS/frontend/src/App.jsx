@@ -11,6 +11,7 @@ import StoreIntegrations from "./pages/StoreIntegrations";
 import Settings from "./pages/Settings";
 //import SalesOverview from "./components/SalesOverview";
 import "../src/styles.css"; // Import regular CSS
+import ProductDiscovery from "./pages/ProductDiscovery";
 
 
 function App() {
@@ -21,12 +22,12 @@ function App() {
         <div className="main-content">
           <Routes>
             <Route path="/" element={<DashboardHome />} />
-            <Route path="/ai-product-recommendations" element={<AIRecommendations />} />
-            <Route path="/ai-product-automation" element={<MyStoreProducts />} />
-            <Route path="/order-analytics" element={<OrderAnalytics />} />
-            <Route path="/ai-marketing-automation" element={<MarketingAutomation />} />
-            <Route path="/store-integrations" element={<StoreIntegrations />} />
             <Route path="/account-settings" element={<Settings />} />
+            <Route path="/product-discovery" element={<ProductDiscovery />} />
+            <Route path="/product-automation" element={<MyStoreProducts />} />
+            <Route path="/order-analytics" element={<OrderAnalytics />} />
+            <Route path="/marketing-automation" element={<MarketingAutomation />} />
+            <Route path="/store-integrations" element={<StoreIntegrations />} />
           </Routes>
         </div>
       </div>

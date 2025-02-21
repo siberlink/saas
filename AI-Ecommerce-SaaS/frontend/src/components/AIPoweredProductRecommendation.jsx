@@ -41,7 +41,7 @@ const recommendedProducts = [
 function AIPoweredProductRecommendation() {
     return (
         <div className="ai-product-recommendation cardai">
-            <h2>AI-Powered Product Recommendations</h2>
+            <h2>Product Recommendations</h2>
             <div className="ai-product-grid">
                 {recommendedProducts.map((product) => (
                     <div key={product.id} className="ai-product-card">

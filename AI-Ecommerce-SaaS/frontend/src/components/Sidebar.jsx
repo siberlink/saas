@@ -23,13 +23,17 @@ function Sidebar() {
             </div>
             <nav>
                 <ul className="sidebar-list">
+
                     <li><Link to="/">Dashboard</Link></li>
-                    <li><Link to="/ai-product-recommendations">AI-Powered Product Recommendations</Link></li>
-                    <li><Link to="/ai-product-automation">AI-Driven Product Automation</Link></li>
-                    <li><Link to="/order-analytics">Order Analytics</Link></li>
-                    <li><Link to="/ai-marketing-automation">AI-Powered Marketing Automation</Link></li>
-                    <li><Link to="/store-integrations">Store Integrations</Link></li>
                     <li><Link to="/account-settings">Account Settings</Link></li>
+                    <li><Link to="/marketing-automation">Marketing Automation</Link></li>
+                    <li><Link to="/order-analytics">Order Analytics</Link></li>
+                    <li><Link to="/product-automation">Product Automation</Link></li>
+                    <li><Link to="/product-discovery">Product Discovery</Link></li>
+                    {/*<li><Link to="/ai-product-automation">Product Automation</Link></li>*/}
+
+                    <li><Link to="/store-integrations">Store Integrations</Link></li>
+
                 </ul>
             </nav>
         </div>
