@@ -1,0 +1,198 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Container */
+.logo-container {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 100px;
+    /* Adjust size as needed */
+    max-width: 100%;
+    height: auto;
+}
+
+/* App Container */
+.app-container {
+    display: flex;
+    /* ✅ Enables Sidebar + Main Content Layout */
+    height: 100vh;
+    /* ✅ Full screen height */
+    width: 100vw;
+    /* ✅ Full screen width */
+}
+
+.content-wrapper {
+    flex: 1;
+    /* ✅ Ensures it expands properly */
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 250px);
+    /* ✅ Takes up space next to Sidebar */
+}
+
+
+.dashboard-container {
+    width: 100%;
+    /* ✅ Ensures full width */
+    flex: 1;
+    /* ✅ Expands inside flex container */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* ✅ Ensures child elements take full width */
+}
+
+
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    /*background-color: #2c3e50;*/
+    background-color: #3f093f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    /* ✅ Ensures Logout button is placed at the bottom */
+    padding-top: 20px;
+}
+
+.logout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c9302c;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* ✅ Max 3 cards per row */
+    gap: 20px;
+    align-items: stretch;
+    /* Ensures all cards have equal height */
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar-list {
+    list-style: none;
+    /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-list li {
+    margin-bottom: 0px;
+}
+
+.sidebar-list a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 7px;
+    border-radius: 5px;
+    transition: background-color 0.3s, font-weight 0.3s;
+}
+
+.sidebar-list a:active,
+.sidebar-list a:focus,
+.sidebar-list a.active {
+    font-weight: bold;
+    background-color: #501752;
+    color: white;
+}
+
+.sidebar-list a:hover {
+    /*background-color: #34495e;*/
+    background-color: #501752;
+    font-weight: bold;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    /* ✅ Fills available space */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: white;
+    width: 100%;
+    /* ✅ Ensures full width inside content-wrapper */
+}
+
+
+
+/* Dashboard Cards */
+.dashboard-card {
+    width: 100%;
+    /* ✅ Takes full width of parent */
+    max-width: 100%;
+    /* ✅ Prevents unexpected shrinking */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Page Headers */
+.page-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Show 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(1, 1fr);
+        /* Show 1 card per row on small screens */
+    }
+}
