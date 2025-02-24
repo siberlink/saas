@@ -2,21 +2,26 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/ui/Button";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebaseConfig"; // Import Firebase auth
 import "../styles/login.css"; // Import the CSS file for styling
 
 const Login = ({ setIsAuthenticated }) => {
-    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
+    //const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
-    const handleLogin = (event) => {
+    const handleLogin = async (event) => {
         if (event) event.preventDefault(); // Prevents form submission reload
-        if (username === "admin" && password === "123") {
+        try {
+            await signInWithEmailAndPassword(auth, email, password);
+            //console.log("User:", user);
             localStorage.setItem("isAuthenticated", "true");
             setIsAuthenticated("true"); // ✅ Update state to trigger re-render
             navigate("/dashboard"); // Redirect to dashboard
-        } else {
-            alert("Invalid credentials");
+        } catch (error) {
+            alert("Error signing in: " + error.message);
         }
     };
 
@@ -26,12 +31,12 @@ const Login = ({ setIsAuthenticated }) => {
                 <h2 className="login-title">Admin Login</h2>
                 <form onSubmit={handleLogin}>
                     <div className="input-group">
-                        <label style={{ fontSize: "14px", fontWeight: "600" }}>Username</label>
+                        <label style={{ fontSize: "14px", fontWeight: "600" }}>E-mail:</label>
                         <input
                             type="text"
-                            placeholder="Enter username"
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
+                            placeholder="Enter Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             style={{
                                 width: "100%",
                                 padding: "10px",
@@ -42,7 +47,7 @@ const Login = ({ setIsAuthenticated }) => {
                         />
                     </div>
                     <div className="input-group">
-                        <label style={{ fontSize: "14px", fontWeight: "600" }}>Password</label>
+                        <label style={{ fontSize: "14px", fontWeight: "600" }}>Password:</label>
                         <input
                             type="password"
                             placeholder="Enter password"

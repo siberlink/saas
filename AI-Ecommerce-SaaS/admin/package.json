@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@aws-amplify/auth": "^6.11.1",
+    "@aws-amplify/core": "^6.10.1",
     "@shadcn/ui": "^0.0.4",
+    "aws-amplify": "^6.13.1",
+    "firebase": "^11.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0"
